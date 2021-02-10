@@ -24,7 +24,7 @@ namespace CRUD_Operations
                 options.UseSqlServer(Configuration.GetConnectionString("PersonContext"));
             });
 
-            services.AddSingleton<IPersonData, InMemoryPersonData>();
+            services.AddScoped<IPersonData, SqlPersonData>();
 
             services.AddDbContext<PersonDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("PersonContext")));
