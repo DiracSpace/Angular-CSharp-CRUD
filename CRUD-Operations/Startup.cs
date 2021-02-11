@@ -44,6 +44,14 @@ namespace CRUD_Operations
 
             app.UseRouting();
 
+            //Accept All HTTP Request Methods from all origins
+            app.UseCors(builder =>
+                builder
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod());
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

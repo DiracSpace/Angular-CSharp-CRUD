@@ -21,15 +21,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,42 +40,28 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[3.1.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Core": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Utils": {
-              "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.11, )"
             }
           },
           "imports": [

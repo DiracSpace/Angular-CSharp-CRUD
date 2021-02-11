@@ -7,3 +7,6 @@ C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\
 C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\netcoreapp3.1\CRUD.Core.csproj.CoreCompileInputs.cache
 C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\netcoreapp3.1\CRUD.Core.dll
 C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\netcoreapp3.1\CRUD.Core.pdb
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\netcoreapp3.1\CRUD.Core.runtimeconfig.json
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\netcoreapp3.1\CRUD.Core.runtimeconfig.dev.json
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\netcoreapp3.1\CRUD.Core.genruntimeconfig.cache
