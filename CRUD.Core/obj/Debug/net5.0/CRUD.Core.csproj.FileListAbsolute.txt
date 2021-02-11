@@ -1,0 +1,14 @@
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\CRUD.Core.deps.json
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\CRUD.Core.runtimeconfig.json
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\CRUD.Core.runtimeconfig.dev.json
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\CRUD.Core.dll
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\ref\CRUD.Core.dll
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\bin\Debug\net5.0\CRUD.Core.pdb
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.AssemblyInfoInputs.cache
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.AssemblyInfo.cs
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.csproj.CoreCompileInputs.cache
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.dll
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\ref\CRUD.Core.dll
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.pdb
+C:\Users\Roberto de León\Documents\git\Angular-CSharp-CRUD\CRUD.Core\obj\Debug\net5.0\CRUD.Core.genruntimeconfig.cache
