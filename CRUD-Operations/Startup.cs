@@ -26,6 +26,8 @@ namespace CRUD_Operations
 
             services.AddScoped<IPersonData, SqlPersonData>();
 
+            services.AddControllers();
+
             services.AddDbContext<PersonDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("PersonContext")));
         }
@@ -41,8 +43,6 @@ namespace CRUD_Operations
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
