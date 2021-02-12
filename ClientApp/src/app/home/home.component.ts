@@ -73,6 +73,7 @@ export class HomeComponent {
     this.api.registerPerson(person).subscribe(
       (data: any) => {
         this.getAllPeople();
+        window.location.reload();
       },
       (error: any) => {
         console.log(error);
@@ -81,6 +82,14 @@ export class HomeComponent {
   }
 
   onClickEditPerson = (person: any) => {
-    console.log(person);
+    this.api.updatePerson(person).subscribe(
+      (data: any) => {
+        this.getAllPeople();
+        window.location.reload();
+      },
+      (error: any) => {
+        console.log(error);
+      }
+    )
   }
 }
