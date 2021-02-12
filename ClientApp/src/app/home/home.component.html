@@ -1,10 +1,91 @@
-<h1>Lista de Personas</h1>
-<div style="text-align: center;">
-  <h2>{{ title }}</h2>
+<div class="container">
+  <h2 class="center-title">{{ title }}</h2>
+  <div class="container btn-action-area">
+    <a class="btn btn-primary add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Agregar</a>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let individual of persons">
+      <tr>
+        <td>{{ individual?.name }}</td>
+        <td>{{ individual?.lastName }}</td>
+        <td>
+          <button type="button" class="btn btn-outline-success" (click)="onclickSetEditPerson(individual.id)"
+            data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Editar</button>
+          <button type="button" class="btn btn-outline-danger" (click)="eliminarPersona(individual.id)">
+            Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<ul>
-  <li *ngFor="let individual of persons">
-    <a>{{ individual.name }}</a>
-  </li>
-</ul>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registrar Persona</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #registerPerson="ngForm" (ngSubmit)="onClickRegisterPerson(registerPerson.value)">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Name" name="name" [(ngModel)]="person.name">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Last Name" name="lastName" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Age" name="age" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Direction" name="direction" ngModel>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Persona</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #editPerson="ngForm" (ngSubmit)="onClickRegisterPerson(editPerson.value)">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Name" name="name" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Last Name" name="lastName" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Age" name="age" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Direction" name="direction" ngModel>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
