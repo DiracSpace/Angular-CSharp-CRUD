@@ -13,3 +13,21 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+h2.center-title {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+div.btn-action-area {
+  text-align: right;
+}
+
+button {
+  margin: .5% .5% .5% .5%;
+}
+
+a.add-btn {
+  margin: .5% .5% .5% .5% !important;
+}

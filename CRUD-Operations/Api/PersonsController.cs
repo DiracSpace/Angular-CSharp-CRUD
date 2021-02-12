@@ -21,6 +21,23 @@ namespace CRUD_Operations.Api
             _context = context;
         }
 
+        /*
+         * 
+         * I was trying to only return a list
+         * with the persons id and name for frontend
+         * selection. This is for efficiency in larger
+         * json petitions but optional right now
+         * https://docs.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-5.0
+        [HttpGet]
+        public GetIDAndPerson()
+        {
+            var IdAndName = from individual in _context.Person
+                            orderby individual.Name
+                            select new { individual.Id, individual.Name };
+            return IdAndName;
+        }
+        */
+
         // GET: api/Persons
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Persons>>> GetPerson()
