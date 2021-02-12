@@ -38,7 +38,7 @@
       <div class="modal-body">
         <form #registerPerson="ngForm" (ngSubmit)="onClickRegisterPerson(registerPerson.value)">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Name" name="name" [(ngModel)]="person.name">
+            <input type="text" class="form-control" placeholder="Name" name="name" ngModel>
           </div>
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Last Name" name="lastName" ngModel>
@@ -67,21 +67,24 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form #editPerson="ngForm" (ngSubmit)="onClickRegisterPerson(editPerson.value)">
+        <form #editPerson="ngForm" (ngSubmit)="onClickEditPerson(editPerson.value)">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Name" name="name" ngModel>
+            <input type="text" class="form-control" placeholder="ID" name="id" [(ngModel)]="person.id">
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Last Name" name="lastName" ngModel>
+            <input type="text" class="form-control" placeholder="Name" name="name" [(ngModel)]="person.name">
           </div>
           <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="Age" name="age" ngModel>
+            <input type="text" class="form-control" placeholder="Last Name" name="lastName" [(ngModel)]="person.lastName">
           </div>
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+            <input type="number" class="form-control" placeholder="Age" name="age" [(ngModel)]="person.age">
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Direction" name="direction" ngModel>
+            <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="person.email">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Direction" name="direction" [(ngModel)]="person.direction">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
